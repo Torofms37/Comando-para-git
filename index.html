@@ -6,7 +6,13 @@
     <title>Página Mobile-First</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="light-theme">
+
+    <!-- Botón para cambiar el tema -->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <img hidden id="moon" src="./svg/moon.svg" alt="mooon">
+        <img id="sun" src="./svg/sun.svg" alt="sun">
+    </button>
 
     <div class="container">
         <!-- Encabezado de la página -->
@@ -88,14 +94,23 @@
             <video width="90%" controls> <source src="./gifs/flechas.mp4" type="video/mp4"> 
         </section>
 
-        <section class="section">
-            <div class="section-info">
-                <h2 class="highlight">ALT + click izquierdo </h2>
-                <p>Puedes agregar varios punteros de inserción para cambiar al mismo tiempo texto o cambiar texto</p>
-                <hr>
-            </div>
-            <video width="90%" controls> <source src="./gifs/puntero.mp4" type="video/mp4"> 
-        </section>
+            <section class="section">
+                <div class="section-info">
+                    <h2 class="highlight">ALT + click izquierdo </h2>
+                    <p>Puedes agregar varios punteros de inserción para cambiar al mismo tiempo texto o cambiar texto</p>
+                    <hr>
+                </div>
+                <video width="90%" controls> <source src="./gifs/puntero.mp4" type="video/mp4"> 
+            </section>
+
+            <section class="section">
+                <div class="section-info">
+                    <h2 class="highlight">SHIFT + TAB</h2>
+                    <p>TAB manda el texto a la derecha, SHIFT + TAB manda el texto a la izquierda</p>
+                    <hr>
+                </div>
+                <video width="90%" controls> <source src="./gifs/tab.mp4" type="video/mp4"> 
+            </section>
 
         <!-- Pie de página -->
         <footer>
@@ -108,7 +123,8 @@
         </footer>
     </div>
 
-    <!-- shift + tabulador para regerar -->
+    <!-- Javascript -->
+     <script src="./index.js"></script>
 
 </body>
 </html>

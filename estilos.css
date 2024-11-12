@@ -98,6 +98,33 @@ footer p {
   display: none;
 }
 
+/* Tema oscuro */
+body.dark-theme {
+  color: #f4f4f9;
+  background-color: #333;
+}
+
+/* Botón de cambio de tema en la esquina superior izquierda */
+.theme-toggle {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: #80bfb0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #66a495;
+}
+
+/* Media queries */
+
 @media (max-width: 480px) {
     .section {
         width: 70%;

@@ -10,10 +10,10 @@ function toggleTheme() {
   
   // Actualiza el texto del botón
   if (body.classList.contains('dark-theme')) {
-    themeToggleBtn.svgMoon.style.display = 'none'; 
-    themeToggleBtn.svgSun.style.display = 'block';
+    svgMoon.style.display = 'none'; 
+    svgSun.style.display = 'block';
   } else {
-    themeToggleBtn.svgMoon.style.display = 'block'; 
-    themeToggleBtn.svgSun.style.display = 'none';
+    svgSun.style.display = 'block';
+    svgMoon.style.display = 'none'; 
   }
 }

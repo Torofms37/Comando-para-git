@@ -1,0 +1,106 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+}
+
+/* Encabezado */
+header {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Secciones */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #5a8492;
+  font-weight: 900;
+}
+
+.section img {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.section-info {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+/* Footer fijo a la derecha */
+footer {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%) rotate(-90deg);
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 2px;
+}
+
+@media (max-width: 480px) {
+    .section {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        width: 30%;
+    }
+}

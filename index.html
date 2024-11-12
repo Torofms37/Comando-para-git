@@ -4,101 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Mobile-First</title>
-    <style>
-        /* Estilos generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-            width: 100vw;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        /* Contenedor principal */
-        .container {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            align-items: center;
-            width: 100%;
-        }
-
-        /* Encabezado */
-        header {
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 24px;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-
-        /* Secciones */
-        .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 70%;
-            padding: 20px;
-            background-color: white;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .section h2 {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .section img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 4px;
-        }
-
-        .highlight { text-decoration: underline; color: #5a8492; font-weight: 900; /* Azul bajito */ }
-
-        /* Pie de página */
-        footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            font-size: 14px;
-            margin-top: auto; /* Empuja el footer al fondo */
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        footer .social-links {
-            margin-top: 10px;
-        }
-
-        footer .social-links a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -111,64 +17,99 @@
 
         <!-- Secciones con encabezado y espacio para una imagen -->
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">CTRL + Ñ</h2>
+                <p>Abre y cierra la terminal fácilmente; ahórrate unos segundos, como por ejemplo ir por un café ☕</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/terminal-code.mp4" type="video/mp4"> 
         </section>
+
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">code -r .</h2>
+                <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/code.mp4" type="video/mp4"> 
         </section>
+
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">ALT + Z - Word Wrap</h2>
+                <p>¡EPA!, ¿código a la derecha y al más allá?, mejor observa todo en la hoja sin dar scroll a la derecha</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/ajustePa.mp4" type="video/mp4"> 
         </section>
+
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">CTRL + A</h2>
+                <p>Selecciona todo el código</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/seleccion.mp4" type="video/mp4"> 
         </section>
+        
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">CTRL + D</h2>
+                <p>Selecciona una palabra y busca palabras similares que quieras encontrar o cambiar</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/palabras.mp4" type="video/mp4"> 
         </section>
+
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">clear</h2>
+                <p>Si tienes cosas que no ocupas en la terminal, mándalos a dormir un rato</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/clear.mp4" type="video/mp4"> 
         </section>
+
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">exit</h2>
+                <p>Para guardar los comandos que usaste en la terminal usa “exit”, guarda el historial de comandos utilizados en la terminal</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/gitinit.mp4" type="video/mp4"> 
         </section>
+
         <section class="section">
-            <h2>Sección 1</h2>
-            <span class="highlight">code -r .</span>
-            <p>Cuando creas o clonas un repo, con esto puedes abrir el proyecto sin salir del VSCode</p>
-            <video width="80%" controls> <source src="./gifs/code.mp4" type="video/mp4"> Tu navegador no soporta el elemento de video.
+            <div class="section-info">
+                <h2 class="highlight">Teclas ↓ y ↑</h2>
+                <p>Recuerda que los comandos se guardan en la terminal al utilizar al final “exit”, ya no vuelvas a escribir los comandos, mejor accede con las teclas ↓ y ↑</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/flechas.mp4" type="video/mp4"> 
+        </section>
+
+        <section class="section">
+            <div class="section-info">
+                <h2 class="highlight">ALT + click izquierdo </h2>
+                <p>Puedes agregar varios punteros de inserción para cambiar al mismo tiempo texto o cambiar texto</p>
+                <hr>
+            </div>
+            <video width="90%" controls> <source src="./gifs/puntero.mp4" type="video/mp4"> 
         </section>
 
         <!-- Pie de página -->
         <footer>
-            <p>Creado por Rubén Aragón</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+            <p>Made by Torofms37 🐂</p>
+            <div class="social-media">
+                <hr>
+                <img src="./svg/g.svg" alt="">
+                <img src="./svg/i.svg" alt="">
+                <img src="./svg/x.svg" alt="">
             </div>
         </footer>
     </div>
+
+    <!-- shift + tabulador para regerar -->
 
 </body>
 </html>

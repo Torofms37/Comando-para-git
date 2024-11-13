@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Mobile-First</title>
+    <title>Comandos para VSCODE</title>
+    <link rel="icon" type="image/png" href="./svg/c.ico">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="light-theme">
 
     <!-- Botón para cambiar el tema -->
-    <button class="theme-toggle" onclick="toggleTheme()">
-        <img hidden id="moon" src="./svg/moon.svg" alt="mooon">
-        <img id="sun" src="./svg/sun.svg" alt="sun">
+    <button class="theme-toggle" onclick="toggleTheme()"> 
+        <img id="moon-icon" src="./svg/moon.svg" alt="moon"> 
     </button>
+        <!-- Añadir los SVGs --> 
+    <img id="moon" src="./svg/moon.svg" alt="sun" style="display:none;"> 
+    <img id="sun" src="./svg/sun.svg" alt="moon" style="display:none;">
 
     <div class="container">
         <!-- Encabezado de la página -->

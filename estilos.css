@@ -98,27 +98,27 @@ footer p {
 
 /* Tema oscuro */
 body.dark-theme {
-  color: #f4f4f9;
+  color: #333;
   background-color: #333;
 }
+header.dark-theme {
+  color: #f2f2f2;
+}
+
+
 
 /* Botón de cambio de tema en la esquina superior izquierda */
 .theme-toggle {
-  position: absolute;
-  top: 1em;
-  left: 1em;
+  position: absolute; 
+  top: 10px;
+  left: 10px;
   padding: 0.5em 1em;
   font-size: 1em;
-  background-color: #80bfb0;
-  color: #fff;
+  background-color: #aacec7;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.theme-toggle:hover {
-  background-color: #66a495;
 }
 
 /* Media queries */

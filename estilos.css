@@ -45,7 +45,7 @@ header p {
   justify-content: center;
   width: 60%;
   padding: 20px;
-  background-color: white;
+  background-color: #7f8b8a;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -54,7 +54,7 @@ header p {
 .section h2 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #5a8492;
+  color: #d3d15a;
   font-weight: 900;
 }
 
@@ -98,14 +98,9 @@ footer p {
 
 /* Tema oscuro */
 body.dark-theme {
-  color: #333;
+  color: #f2f2f2;
   background-color: #333;
 }
-header.dark-theme {
-  color: #f2f2f2;
-}
-
-
 
 /* Botón de cambio de tema en la esquina superior izquierda */
 .theme-toggle {
@@ -114,7 +109,7 @@ header.dark-theme {
   left: 10px;
   padding: 0.5em 1em;
   font-size: 1em;
-  background-color: #aacec7;
+  background-color: #d3d15a;
   border: none;
   border-radius: 5px;
   cursor: pointer;
